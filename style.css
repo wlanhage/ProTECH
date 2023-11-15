@@ -1,4 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins:wght@300;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+
 * {
     padding: 0;
     margin: 0;
+
 }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* ---------------- KATEGORI-BOXAR ----------------*/
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+
+.box1, .box2, .box3 {
+    background-color: #D9D9D9;
+    width: 350px;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.box1, .box2, .box3, p{
+    color: #393939;
+    
+    text-align: center;
+
+    font-family: Raleway;
+    font-size: 24px;
+}
+
+.moreProducts p{
+    
+    font-family: Raleway;
+    font-size: 16px;
+    color: #000;
+    text-decoration-line: underline;
+
+    margin-bottom: 65px;
+
+
+}
+
+.moreProducts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+}
+
+
+
+/* ---------------- Review kommentarer ----------------*/
+
+.reviewComments {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    
+}
+
+.commentOne, .commentTwo, .commentThree {
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.reviewParagraph {
+
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 300;
+    width: 180px;
+
+    margin-bottom: 16px;
+
+    text-align: center;
+}
+
+.reviewTitle {
+    font-family: Raleway;
+    font-size: 19px;
+    font-weight: 400;
+
+
+
+    margin-bottom: 46px;
+}
+
+
+
+
+
+
+/* ------------ STATISK "POP UP" RUTA ----------------*/
+
+.mailSquare {
+    width: 80%;
+    height: 260,27px;
+
+    background-color: #c2c2c2;
+    text-align: center;
+    margin-bottom: 26px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailSquare img{
+    width: 53px;
+    height: 53px;
+
+    margin-top: 20px;
+}
+
+.mailText h2 {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mailText p {
+    width: 212px;
+    height: 46px;
+
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+}
+
+.emailPlaceholder {
+    width: 321px;
+    height: 41px;
+    
+    gap: 10px;
+
+    background-color: #EDEBEB;
+
+    margin-bottom: 10px;
+}
+
+.subButton {
+    width: auto;
+    padding: 10px;
+    height: 38px;
+    
+    border-radius: 4px;
+    border: #000;
+    background-color: #FFFFFF;
+
+    margin-bottom: 20px;
+}
+
+.subButton p{
+    font-family: IBM Plex Sans;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.subButton:hover {
+background-color: #F5CFFF;
+border: #431472;
+}
+
+
+
+
+
+.subButton {
+    
+}
+
+
+/* ---------------- FOOTER ----------------*/ 
+footer {
+    height: 258px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+footer a:visited {
+    color: #000;
+
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 26px;
+
+    gap: 22px;
+}
+
+.footerNav .kontakt, .faq, .leverans, .villkor {
+    color: #000;
+
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.footerSocials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerSocials img{
+    width: 24px;
+    height: 24px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* ---------------- MEDIA QUERIES DESKTOP ----------------*/
+
+@media screen and (min-width: 1100px) {
+
+.boxContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewComments { 
+    flex-direction: row;
+
+    
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    height: 258px;
+    width: 100%;
+
+    background: #D9D9D9
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 43px;
+}
+.footerSocials {
+   
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- DARK MODE PROPS ----------------*/
+
+.dark-mode {
+
+    background-color: #262626;
+    color: #fff;
+
+}
+
+.dark-mode p{
+
+    color: #fff;}
+
+.dark-mode .mailText p{
+    color: #000;
+}
+
+.dark-mode .subButton p {
+    color: #000; /* change to desired color */
+  }
