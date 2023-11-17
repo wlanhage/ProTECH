@@ -76,10 +76,23 @@ body {
     position: relative;
 }
 
-.box1 img, .box2 img, .box3 img, .mailSquareImg img{
+.box1 img, .box2 img, .box3 img, .mailSquareImg img,
+.box1 video, .box2 video, .box3 video {
     width: 100%; /* Adjust as needed */
     height: 100%; /* Adjust as needed */
     object-fit: cover; /* Adjust as needed */
+}
+
+.box1 video, .box2 video, .box3 video {
+    display: none;
+}
+
+.box1:hover video, .box2:hover video, .box3:hover video {
+    display: block;
+}
+
+.box1:hover img, .box2:hover img, .box3:hover img {
+    display: none;
 }
 
 .category-text {

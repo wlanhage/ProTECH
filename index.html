@@ -11,8 +11,10 @@
 
 </head>
 
+
+<!--- Dark Mode Toggle -->
 <div class="toggle-button">
-    <div class="toggle-slider"></div>
+    <div class="toggle-slider"></div> 
 </div>
 
 
@@ -22,21 +24,36 @@
     </header>
 
 
+
+<!--- Container för samtliga boxar och även för "more products" text -->
+<!--- Behandlar bild, text och video som syns på hover -->
     <div class="category-boxContainer">
         <div class="boxContainer">
+
+            <!--- Första box -->
             <div class="box1">
                 <img src="pics/tent_preview_v1_1920x1920.png" alt="ProTECH tent">
+                <video loop muted class="item-video">
+                    <source src="vids/earth.mp4" type="video/mp4">
+                </video>
                 <div class="category-text">Kategori 1</div>
-
             </div>
 
+            <!--- Andra box -->
             <div class="box2">
                 <img src="pics/jacka_1.png" alt="ProTECH jacket">
+                <video loop muted class="item-video">
+                    <source src="vids/earth.mp4" type="video/mp4">
+                </video>
                 <div class="category-text"> Kategori 2</div>
             </div>
 
+            <!--- Tredje box -->
             <div class="box3">
                 <img src="pics/smartwatch_preview_v2_1920x1920.png" alt="ProTECH smartwatch">
+                <video loop muted class="item-video">
+                    <source src="vids/earth.mp4" type="video/mp4">
+                </video>
                 <div class="category-text"> Kategori 3</div>
             </div>
         </div>
@@ -46,6 +63,8 @@
 
 
 
+<!--- Container för samtliga kommentarer -->
+<!--- En klass per kommentar, som har en h1 och en p -->
 
     <div class="reviewComments">
         <div class="commentOne">
@@ -63,9 +82,14 @@
         
     </div>
 
+
+
+
+<!--- Container för hela rutan som hanterar epost adresser -->
     <div class="mailSquareContainer">
         <div class="mailSquare">
             
+            <!--- Mailikon, text och placeholder för mail -->
             <img class="mailIcon" src="icons/mail.png" alt="mail-icon">
             <div class="mailText">
                 <h2>
@@ -81,6 +105,8 @@
             </button>
         </div>
 
+
+            <!--- Bild som blir display: block på fullskärm - syns ej på mobil -->
             <div class="mailSquareImg">
                 <img src="pics/flaskapreview2.png" alt="ProTECH bottle">
             </div>
@@ -89,6 +115,9 @@
     </div>
 
 
+
+
+    <!--- Footer med länkar -->
     <footer>
         <div class="footerNav">
             <div class="kontakt">
@@ -105,6 +134,9 @@
             </div>
         </div>
                 
+
+
+        <!--- Sociala medier ikoner -->
             <div class="footerSocials">
                <a href="#"> <img src="icons/fb.png" alt="Facebook"></a>
                <a href="#"><img src="icons/insta.png" alt="Instagram"></a>
