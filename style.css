@@ -14,12 +14,49 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    background-color: #fff;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
+
+/* -------- DARK MODE KNAPP ------------- */
+
+.toggle-button {
+    width: 60px; /* Width of the button */
+    height: 30px; /* Height of the button */
+    background-color: #ddd; /* Background of the button */
+    border-radius: 15px; /* Rounded corners */
+    position: relative; /* Required for absolute positioning of the slider */
+    cursor: pointer; /* Hand cursor on hover */
+
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+
+
+    margin-bottom: 50px;
+}
+
+.toggle-slider {
+    width: 22px; /* Width of the slider */
+    height: 22px; /* Height of the slider */
+    background-color: #474747; /* Background of the slider */
+    
+    position: absolute;
+    top: 4px; /* Small space from the top */
+    left: 7px; /* Start position from the left */
+    border-radius: 50%; /* Round shape */
+    transition: 0.3s; /* Smooth transition for sliding effect */
+}
+
+
 
 
 /* ---------------- KATEGORI-BOXAR ----------------*/
 
 .boxContainer {
+    margin-top: 100px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,21 +73,33 @@ body {
     background-color: #D9D9D9;
     width: 350px;
     height: 350px;
+    position: relative;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box1 img, .box2 img, .box3 img, .mailSquareImg img{
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    object-fit: cover; /* Adjust as needed */
+}
 
-    
+.category-text {
+    position: absolute; /* Absolutely position the text */
+    bottom: 10px; /* Distance from the bottom of the box */
+    left: 10px; /* Distance from the left of the box */
+    color: white; /* Text color */
+    font-weight: bold; /* Text weight */
+    /* Add more styling as needed */
 }
 
 .box1, .box2, .box3, p{
     color: #393939;
-    
-    text-align: center;
 
     font-family: Raleway;
     font-size: 24px;
+}
+
+.box1 p, .box2 p, .box3 p {
+    
 }
 
 .moreProducts p{
@@ -133,7 +182,7 @@ body {
     height: 100%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
 
@@ -176,7 +225,7 @@ body {
 }
 
 .emailPlaceholder {
-    width: 321px;
+    width: 220px;
     height: 41px;
     
     gap: 10px;
@@ -216,10 +265,10 @@ border: #431472;
     justify-content: center;
 }
 
-.mailSquareImg .img {
+.mailSquareImg img {
     width: 200px;
     height: 200px;
-    background-color: gray;
+    
 
     display: none;
 }
@@ -296,12 +345,20 @@ footer a:visited {
     
 }
 
-.mailSquareImg .img {
-    width: 200px;
-    height: 200px;
-    background-color: gray;
+.mailSquareContainer {
+    justify-content: space-around;
+}
+
+.mailSquareImg img {
+    width: 350px;
+    height: 350px;
+    
 
     display: block;
+}
+
+.emailPlaceholder {
+    width: 321px;
 }
 
 
@@ -351,7 +408,21 @@ footer {
 
 /* ---------------- DARK MODE PROPS ----------------*/
 
+.dark-mode .toggle-slider{
+    background-color: #fff;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.dark-mode .toggle-button {
+    background-color: #9d9d9d;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
 .dark-mode {
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 
     background-color: #262626;
     color: #fff;
@@ -368,4 +439,6 @@ footer {
 
 .dark-mode .subButton p {
     color: #000; /* change to desired color */
+    
+
   }
