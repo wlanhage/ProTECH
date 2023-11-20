@@ -362,7 +362,7 @@ body {
       margin-top: 30px;
     }
   
-    .button {
+    .button { /* byt namn till något mer specifikt selma */
       display: inline-flex;
       align-items: center;
       justify-content: center;
