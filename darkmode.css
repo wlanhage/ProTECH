@@ -1,0 +1,36 @@
+/* ---------------- DARK MODE PROPS ----------------*/
+
+
+
+.dark-mode .toggle-slider{
+    background-color: #fff;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.dark-mode .toggle-button {
+    background-color: #9d9d9d;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.dark-mode {
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+
+    background-color: #262626;
+    color: #fff;
+
+}
+
+.dark-mode p{
+
+    color: #fff;}
+
+.dark-mode .mailText p{
+    color: #000;
+}
+
+.dark-mode .subButton p {
+    color: #000; 
+} 
