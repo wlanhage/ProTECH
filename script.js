@@ -1,7 +1,7 @@
 
 
 
-
+/* ---------------- DARK MODE SLIDE KNAPP ---------------- */
 
 document.querySelector('.toggle-button').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
@@ -13,6 +13,8 @@ document.querySelector('.toggle-button').addEventListener('click', function() {
         slider.style.left = '7px'; // Move slider back to the left
     }
 });
+
+/* ------ SPELA VIDEOR PÅ HOVER (BOX 1, 2, 3) ------ */
 
 document.querySelectorAll('.box1, .box2, .box3').forEach(box => {
     const video = box.querySelector('video');

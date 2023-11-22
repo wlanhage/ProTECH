@@ -11,18 +11,23 @@
 
 </head>
 
-
-
-
-
 <body>
+  
     <!-- ÖVERDELEN AV SIDAN, NAV, KARUSELL, INTRO OSV -->
     <header>
+
+
         <nav class="navbar">
           <div class="siteTitle">ProTech</div>
   
           <div class="desktop-nav-right">
-            <div class="nav-products">Produkter</div>
+
+               <!--- Dark Mode Toggle -->
+        <div class="toggle-button">
+          <div class="toggle-slider"></div> 
+        </div>
+
+            <div class="nav-products"><h1>Produkter</h1></div>
             <div class="desktop-search">
               Sök <img src="search-28.svg" alt="Sök" />
             </div>
@@ -80,22 +85,17 @@
         <div class="siteInfo">
           <h1>GRATIS GLASKA VID FÖRSTA KÖP</h1>
           <div class="texty">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id
             odio tempor, semper magna non, porta tellus. In aliquam sem ac est
-            blandit ultricies. Fusce facilisis leo in nibh fringilla pellentesque.
+            blandit ultricies. Fusce facilisis leo in nibh fringilla pellentesque.</p>
           </div>
-          <div class="button"><div class="readMore">LÄS MER</div></div>
+          <button class="readMore">LÄS MER OM HERO</button>
         </div>
       </div>
       <div class="tillfalligtnamn">PILKNAPP</div> <!--Ska lägga pilknapp här!-->
 
 <!--------->
 
-
-    <!--- Dark Mode Toggle -->
-<div class="toggle-button">
-    <div class="toggle-slider"></div> 
-</div>
 
 
 
@@ -105,31 +105,31 @@
         <div class="boxContainer">
 
             <!--- Första box -->
-            <div class="box1">
+            <a href="#"> <div class="box1"> 
                 <img src="pics/tent_preview_v1_1920x1920.png" alt="ProTECH tent">
                 <video loop muted class="item-video">
                     <source src="vids/earth.mp4" type="video/mp4">
                 </video>
                 <div class="category-text">Kategori 1</div>
-            </div>
+            </div> </a>
 
             <!--- Andra box -->
-            <div class="box2">
+            <a href="#"> <div class="box2">
                 <img src="pics/jacka_1.png" alt="ProTECH jacket">
                 <video loop muted class="item-video">
                     <source src="vids/earth.mp4" type="video/mp4">
                 </video>
                 <div class="category-text"> Kategori 2</div>
-            </div>
+            </div></a>
 
             <!--- Tredje box -->
-            <div class="box3">
+            <a href="#"> <div class="box3">
                 <img src="pics/smartwatch_preview_v2_1920x1920.png" alt="ProTECH smartwatch">
                 <video loop muted class="item-video">
                     <source src="vids/earth.mp4" type="video/mp4">
                 </video>
                 <div class="category-text"> Kategori 3</div>
-            </div>
+            </div></a>
         </div>
 
         <div class="moreProducts"><a href="#"><p>Se alla produkter</p></a></div>
@@ -218,6 +218,7 @@
             </div>
         </div>
     </footer>
+  
     <script src="script.js"></script>
     <script src="hamburger.js"></script>
     <script src="slides.js"></script>

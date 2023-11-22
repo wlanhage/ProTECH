@@ -9,24 +9,36 @@
 
 }
 
+
+
 body {
+    position: relative;
+    
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-    background-color: #fff;
+    
     transition: 0.3s;
     transition-timing-function: ease-in-out;
+
+    background-image: url('pics/backgrounds/Blobbarbakgrund-mobile.svg');
+    background-position: center -500px; 
+    background-size: 500px 4000px;
+    background-repeat: no-repeat;
+
+  margin: 0;
+    
+    
+
+
+    background-color: #F9F6ED;
 }
 
-
-* {
-    padding: 0;
-    margin: 0;
-  }
   
-  @media (min-width: 551px) { /** HEADER FÖR DESKTOP **/
+  @media (min-width: 850px) { /** HEADER FÖR DESKTOP **/
     header {
       height: 76px;
       background-color: #fff;
@@ -37,6 +49,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
     }
   
     .siteTitle {
@@ -75,8 +88,9 @@ body {
     .preview {
       display: flex;
       flex-direction: row;
-      /*justify-content: space-between;*/
+      justify-content: space-between;
       align-items: center;
+      
     }
   
     .carousel-hero-images {
@@ -87,8 +101,8 @@ body {
   
     .carousel-item {
       background-color: #d9d9d9;
-      height: auto;
-      width: auto;
+      height: 75%;
+      width: 75%;
       /*gap: 5px;*/
       display:none;
     }
@@ -98,8 +112,13 @@ body {
     }
   
     .siteInfo {
-      width:30%;
-      padding: 10px;
+      width:40%;
+      margin-left: 46px;
+      margin-right: 100px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       
     }
   }
@@ -114,6 +133,8 @@ body {
     display: block;
     
     height: auto;
+
+    background-color: #A09D59;
   }
   
   .carousel-nav {
@@ -156,12 +177,52 @@ body {
     /*width: 50%;*/
     margin-right: 3px;
   }
+  .siteInfo h1{
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .texty {
+    color: var(--greybox-grey, var(--Svart, #28282D));
+    /* Desktop/Brödtext */
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+  }
   
   .tillfalligtnamn { /*Paxar space för scroll-pil-knappen, ev inte aktuell för desktop? Men jag tar bort det sen isf*/
     padding:40px;
   }
+
+  .readMore {
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  /* position: relative; */
+  background-color: #ffffff;
+  border: 4px solid #F7969E;
+  box-shadow: 0px 4px #d0d0d0;
+  border-radius: 10px;
+  gap: 4px;
+  cursor: pointer;
+
   
-  @media (max-width: 550px) { /** HEADER FÖR MOBIL **/
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  }
+  
+  @media (max-width: 850px) { /** HEADER FÖR MOBIL **/
     /*Ändra size sen*/
     header {
       height: 85px;
@@ -201,6 +262,8 @@ body {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
+
+    
     }
   
     header .menyOptions {
@@ -218,6 +281,16 @@ body {
       width: 28px;
       height: 28px;
       margin-right: 8px;
+    }
+
+    nav  {
+      color: var(--greybox-grey, var(--Svart, #28282D));
+      text-align: right;
+      font-family: Raleway;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
     }
   
 
@@ -376,27 +449,22 @@ body {
       cursor: pointer;
     }
   
-    .readMore {
-      /*position: relative;*/
-      width: fit-content;
-      white-space: nowrap;
-      /*text-align: center;*/
-      margin-top: -1px;
-      color: #373737;
-    }
+    
   }
+
+  
   
 
 
 /* -------- DARK MODE KNAPP ------------- */
 
 .toggle-button {
-    width: 60px; /* Width of the button */
-    height: 30px; /* Height of the button */
-    background-color: #ddd; /* Background of the button */
-    border-radius: 15px; /* Rounded corners */
-    position: relative; /* Required for absolute positioning of the slider */
-    cursor: pointer; /* Hand cursor on hover */
+    width: 60px; 
+    height: 30px; 
+    background-color: #ddd; 
+    border-radius: 15px; 
+    position: relative; 
+    cursor: pointer; 
 
     transition: 0.3s;
     transition-timing-function: ease-in-out;
@@ -406,15 +474,15 @@ body {
 }
 
 .toggle-slider {
-    width: 22px; /* Width of the slider */
-    height: 22px; /* Height of the slider */
-    background-color: #474747; /* Background of the slider */
+    width: 22px; 
+    height: 22px; 
+    background-color: #474747; 
     
     position: absolute;
-    top: 4px; /* Small space from the top */
-    left: 7px; /* Start position from the left */
-    border-radius: 50%; /* Round shape */
-    transition: 0.3s; /* Smooth transition for sliding effect */
+    top: 4px; 
+    left: 7px; 
+    border-radius: 50%; 
+    transition: 0.3s; 
 }
 
 
@@ -446,9 +514,9 @@ body {
 
 .box1 img, .box2 img, .box3 img, .mailSquareImg img,
 .box1 video, .box2 video, .box3 video {
-    width: 100%; /* Adjust as needed */
-    height: 100%; /* Adjust as needed */
-    object-fit: cover; /* Adjust as needed */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
 }
 
 .box1 video, .box2 video, .box3 video {
@@ -464,23 +532,20 @@ body {
 }
 
 .category-text {
-    position: absolute; /* Absolutely position the text */
-    bottom: 10px; /* Distance from the bottom of the box */
-    left: 10px; /* Distance from the left of the box */
-    color: white; /* Text color */
-    font-weight: bold; /* Text weight */
-    /* Add more styling as needed */
+    position: absolute;  
+    color: white; 
+    font-weight: bold; 
+    
 }
 
 .box1, .box2, .box3, p{
     color: #393939;
-
     font-family: Raleway;
     font-size: 24px;
-}
 
-.box1 p, .box2 p, .box3 p {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .moreProducts p{
@@ -560,8 +625,6 @@ body {
 
 .mailSquareContainer {
     
-    
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,7 +675,7 @@ body {
 }
 
 .emailPlaceholder {
-    width: 280px;
+    width: 75%;
     height: 41px;
 
     background-color: #EDEBEB;
@@ -622,6 +685,7 @@ body {
 }
 
 .subButton {
+
     width: auto;
     padding: 10px;
     height: 38px;
@@ -726,7 +790,18 @@ footer a:visited {
 
 /* ---------------- MEDIA QUERIES DESKTOP ----------------*/
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1085px) {
+
+  body {
+    background-image: url('pics/backgrounds/Blobbarbakgrund-desktop.svg');
+    background-size: 5000px 3000px;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0; 
+  
+  }
+
+  
 
 .boxContainer {
     display: flex;
@@ -784,10 +859,6 @@ footer {
 
 
 
-}
-
-
-
 
 
 
@@ -806,6 +877,8 @@ footer {
 
 
 /* ---------------- DARK MODE PROPS ----------------*/
+
+
 
 .dark-mode .toggle-slider{
     background-color: #fff;
@@ -837,7 +910,7 @@ footer {
 }
 
 .dark-mode .subButton p {
-    color: #000; /* change to desired color */
-    
+    color: #000; 
+} 
 
   }
