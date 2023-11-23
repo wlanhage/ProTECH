@@ -8,6 +8,50 @@
         margin: 0; 
       
       }
+
+      header {
+        height: 76px;
+        background-color: #fff;
+        font-size: 20px;
+      }
+    
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+    
+      .siteTitle {
+        background-color: lightblue;
+        
+        margin-left: 10px;
+      }
+    
+      .desktop-nav-right {
+        display: flex;
+        align-items: center;
+      }
+    
+      .nav-products {
+        padding: 10px;
+        background-color: lightgreen;
+      }
+    
+      .desktop-search {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 10px;
+      }
+    
+      .nav-menu {
+        display: none;
+      }
+    
+      .header-right {
+        display: none;
+      }
     
       .preview {
         display: flex;
@@ -19,7 +63,7 @@
       }
 
       .carousel {
-        width: 55%;
+        width: 60%;
         height: auto;
         
       }
@@ -35,6 +79,10 @@
         /*gap: 5px;*/
         display:none;
       }
+
+      .carousel-item h1 {
+        display: none;
+    }
     
       .carousel-item--selected {
         display: inline-block;
@@ -49,6 +97,10 @@
         flex-direction: column;
         align-items: center;
         
+      }
+
+      .siteInfo h1 {
+        display: block;
       }
 
     
