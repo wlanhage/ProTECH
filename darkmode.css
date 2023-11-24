@@ -18,7 +18,7 @@
     transition: 0.3s;
     transition-timing-function: ease-in-out;
 
-    background-color: #262626;
+    background-color: #28282D;
     color: #fff;
 
 }
@@ -34,3 +34,24 @@
 .dark-mode .subButton p {
     color: #000; 
 } 
+
+.dark-mode .mailSquareContainer {
+    background-color: #28282D;
+}
+
+body.dark-mode {
+    background-image: url('pics/backgrounds/background-mobi-dark.svg');
+}
+
+@media screen and (min-width: 750px) {
+    body.dark-mode {
+        background-image: url('pics/backgrounds/background-desk-dark.svg');
+    }
+}
+
+
+
+.dark-mode .smallBox, .dark-mode .box1, .dark-mode .box2, .dark-mode .box3 {
+    background: linear-gradient(to bottom, #002c92 0%, #004bfb 100%);
+}  
+

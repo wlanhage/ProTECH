@@ -2,9 +2,9 @@
 
 
     body {
-        background-image: url('pics/backgrounds/Blobbarbakgrund-desktop.svg');
-        background-size: 2000px 2100px;
-        background-position: center 800px; 
+        background-image: url('pics/backgrounds/background-desk-light.svg');
+        background-size: 1200px 1800px;
+        background-position: center 75%; 
         background-repeat: no-repeat; 
         
       
@@ -22,24 +22,20 @@
         align-items: center;
         width: 100%;
       }
-    
-      .siteTitle {
-        
-        padding: 10px;
-        margin-left: 10px;
-      }
-    
       .desktop-nav-right {
-    
         display: flex;
         align-items: center;
-        gap: 20px;
+        justify-content: space-between;
+      }    
+
+      .desktop-nav-right h1 {
+        font-family: 'Raleway';
+        font-size: 14px;
       }
+
+      
     
-      .nav-products {
-        padding: 10px;
-        
-      }
+    
     
       .desktop-search {
         display: flex;
@@ -88,7 +84,7 @@
       .carousel-item h1 {
         display: none;
     }
-    
+
       .carousel-item--selected {
         display: inline-block;
       }
@@ -140,6 +136,39 @@
     .reviewComments {
         flex-direction: row;
     }
+
+
+
+
+
+
+
+
+    /* MINDRE BOXAR */
+
+    .smallBoxContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 2 columns */
+        grid-template-rows: repeat(2, 1fr); /* 4 rows */
+        gap: 10px; /* Adjust gap as needed */
+        
+        
+    }
+
+    .smallBox {
+        height: 165px; /* Fixed height */
+        width: 165px; /* Width adjusted to fill the column */
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */ 

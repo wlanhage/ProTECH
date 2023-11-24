@@ -1,10 +1,10 @@
 @media (min-width: 1050px) { /** HEADER FÖR DESKTOP **/
     
     body {
-        background-image: url('pics/backgrounds/Blobbarbakgrund-desktop.svg');
-        background-size: 5000px 3000px;
+        background-image: url('pics/backgrounds/background-desk-light.svg');
+        background-size: 3000px 3100px;
         background-repeat: no-repeat; 
-        background-position: center; 
+        background-position: center -30%; 
         margin: 0; 
       
       }
@@ -22,21 +22,12 @@
         width: 100%;
       }
     
-      .siteTitle {
-        background-color: lightblue;
-        
-        margin-left: 10px;
-      }
     
       .desktop-nav-right {
         display: flex;
         align-items: center;
-      }
-    
-      .nav-products {
-        padding: 10px;
-        background-color: lightgreen;
-      }
+        justify-content: space-between;
+      }    
     
       .desktop-search {
         display: flex;
@@ -128,6 +119,21 @@
     height: 100%;
     object-fit: cover; 
 }
+
+
+.smallBoxContainer {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, 255px); /* 2 rows with 255px height each */
+  }
+
+  .smallBox {
+    height: 255px; /* Fixed height for consistency */
+    width: 255px;
+  }
+
+
+
+
     
     .reviewComments { 
         flex-direction: row;
