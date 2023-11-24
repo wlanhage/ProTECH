@@ -24,18 +24,267 @@ body {
     transition: 0.3s;
     transition-timing-function: ease-in-out;
 
-    background-image: url('pics/backgrounds/Blobbarbakgrund-mobile.svg');
+    background-image: url('pics/backgrounds/background-mobi-light.svg');
     background-position: center -500px; 
     background-size: 500px 4000px;
     background-repeat: no-repeat;
 
-  margin: 0;
-    
-    
-
-
+    margin: 0;
+  
     background-color: #F9F6ED;
 }
+
+header {
+  height: 76px;
+  width: 100%;
+  background-color: #28282D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  font-size: 20px;
+  
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  margin-left: 10px;
+}
+
+.headerLogo {
+  height: 50px;
+  width: 50px;
+  
+}
+
+.headerLogo img {
+  max-width: 100%; 
+  height: auto; 
+  
+}
+
+.desktop-nav-right div {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.desktop-nav-right h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+.desktop-nav-right img {
+  height: 30px; 
+}
+
+
+.desktop-nav-right {
+  display: none;
+
+  margin-right: 25px;
+  align-items: center;
+  gap: 50px;
+}
+
+
+
+
+
+header .navbar {
+  
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #28282D;
+}
+
+header .siteTitle {
+
+  margin-top: 10px;
+  margin-left: 5px;
+
+  color: white;
+
+  
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.header-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  gap: 24px;
+
+
+}
+
+.mobileSearch {
+  height: 34px;
+  width: auto;
+}
+
+.mobileKorg {
+  height: 34px;
+  width: auto;
+}
+
+header .menyOptions {
+  /*Söknings-knapp*/
+  /*Förenkla detta selma*/
+  gap: 8px;
+  /*flex: 0 0 auto;*/
+  display: inline-flex;
+  align-items: flex-start;
+  /*position: relative;*/
+}
+
+header .search {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+nav  {
+  color: var(--greybox-grey, var(--Svart, #28282D));
+  text-align: right;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+/** BURGER MENU STYLE O ALLT VAD DET INNEBÄR **/
+.nav-menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  transition: 0.5s ease;
+  background-color: slategray;
+  z-index: 1;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: beige;
+  padding: 30px;
+  /*height: 844px;*/
+  width: 70%;
+  font-size: 18px;
+  border-bottom: 1px slategray;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /*ändra detta selma*/
+}
+
+.h1Meny {
+  font-size: 34px;
+  margin-bottom: 20px;
+  margin-top: 16px;
+}
+
+.nav-link {
+  /*lägga till kant på botten selma*/
+  transition: 0.7s ease;
+}
+
+.nav-link,
+a:link {
+  text-decoration: none;
+}
+
+.nav-link,
+a:visited {
+  text-decoration: none;
+}
+
+.nav-link,
+a:hover {
+  text-decoration: none;
+}
+
+.nav-link,
+a:active {
+  text-decoration: none;
+}
+
+.hamburger {
+  display: block;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #373737;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+
+
+
+
+
 
   
   /***** STYLE SOM ÄR SAMMA BÅDE PÅ MOBIL OCH DESKTOP, kmr förbättras ******/
@@ -174,188 +423,7 @@ body {
   
   
     /*Ändra size sen*/
-    header {
-      height: 76px;
-      width: 100%;
-      background-color: #28282D;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      
-      font-size: 20px;
-      
-    }
-  
-    .desktop-nav-right {
-      
-      display: none;
-    }
-  
-    header .navbar {
-      /*gap: 120px;
-      top: 47px;
-      left: 3px;
-      left:20px;*/
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      display: inline-flex;
-      flex-direction: row;
-      width: 100%;
-      background-color: #28282D;
-    }
-  
-    header .siteTitle {
-      /*Flytta texten sen*/
-      /*position: relative;
-      width: fit-content;
-      margin-top: 0;
-      
-      font-size: 1.7rem;
-      white-space: nowrap;*/
-
-      
-      padding: 10px;
-      background-color: #28282D;
-      margin-left: 20px;
-
-      color: white;
-    }
-  
-    .header-right {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-
     
-    }
-  
-    header .menyOptions {
-      /*Söknings-knapp*/
-      /*Förenkla detta selma*/
-      gap: 8px;
-      /*flex: 0 0 auto;*/
-      display: inline-flex;
-      align-items: flex-start;
-      /*position: relative;*/
-    }
-  
-    header .search {
-      position: relative;
-      width: 28px;
-      height: 28px;
-      margin-right: 8px;
-    }
-
-    nav  {
-      color: var(--greybox-grey, var(--Svart, #28282D));
-      text-align: right;
-      font-family: Raleway;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-    }
-  
-
-    /** BURGER MENU STYLE O ALLT VAD DET INNEBÄR **/
-    .nav-menu {
-      display: none;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 70%;
-      transition: 0.5s ease;
-      background-color: slategray;
-      z-index: 1;
-    }
-  
-    .nav-item {
-      margin: 16px 0;
-    }
-  
-    .nav-menu.active {
-      right: 0;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      background-color: beige;
-      padding: 30px;
-      /*height: 844px;*/
-      width: 70%;
-      font-size: 18px;
-      border-bottom: 1px slategray;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /*ändra detta selma*/
-    }
-  
-    .h1Meny {
-      font-size: 34px;
-      margin-bottom: 20px;
-      margin-top: 16px;
-    }
-  
-    .nav-link {
-      /*lägga till kant på botten selma*/
-      transition: 0.7s ease;
-    }
-  
-    .nav-link,
-    a:link {
-      text-decoration: none;
-    }
-  
-    .nav-link,
-    a:visited {
-      text-decoration: none;
-    }
-  
-    .nav-link,
-    a:hover {
-      text-decoration: none;
-    }
-  
-    .nav-link,
-    a:active {
-      text-decoration: none;
-    }
-  
-    .hamburger {
-      display: block;
-      margin-right: 20px;
-      cursor: pointer;
-      z-index: 2;
-    }
-  
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-  
-    .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-    .bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      background-color: #373737;
-    }
-  
-    li {
-      list-style: none;
-    }
   
     /*KARUSELL FÖR MOBIL*/
     .carousel-item {
@@ -419,11 +487,19 @@ body {
     
   
 
+
+
+
   
   
 
 
 /* -------- DARK MODE KNAPP ------------- */
+
+.darkModeBtn {
+  position: relative;
+  top: 24px;
+}
 
 .toggle-button {
     width: 60px; 
@@ -451,6 +527,12 @@ body {
     border-radius: 50%; 
     transition: 0.3s; 
 }
+
+
+
+
+
+
 
 
 
@@ -536,6 +618,85 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- MINDRE BOXAR CSS ----------------*/
+
+.smallBoxTitle {
+  
+  font-family: raleway;
+  font-size: 32px;
+  font-weight: 300;
+
+  text-align: left; /* Aligns the text to the left */
+  margin-bottom: 10px;
+}
+
+
+.smallBox {
+  background: linear-gradient(to bottom, #F76969 0%, #FABDC2 100%);
+  position: relative;
+}
+
+.smallBox img, .smallBox video {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.smallBoxContainer {
+  display: grid;
+  gap: 10px;
+  row-gap: 30px;
+  
+  margin-bottom: 90px;
+}
+
+.smallBoxContainer {
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(4, 165px); 
+}
+
+.smallBox {
+  height: 165px; 
+  width: 165px;
+}
+
+
+.boxDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto 10px;
+  font-size: 16px; 
+  font-family: raleway;
+  font-weight: 300;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------- Review kommentarer ----------------*/
 
 .reviewComments {
@@ -582,6 +743,12 @@ body {
 
     margin-bottom: 46px;
 }
+
+
+
+
+
+
 
 
 
@@ -707,6 +874,14 @@ transform: ease-in-out;
 
     display: none;
 }
+
+
+
+
+
+
+
+
 
 
 
