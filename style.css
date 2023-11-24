@@ -357,7 +357,7 @@ li {
   }
   
   .siteInfo {
-    background-color: lightgreen;
+    
     /*width: 50%;*/
     margin-right: 3px;
   }
@@ -559,6 +559,9 @@ li {
   width: 350px;
   height: 350px;
   position: relative;
+
+  box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
 .box1 img, .box2 img, .box3 img, .mailSquareImg img,
@@ -645,6 +648,8 @@ li {
 .smallBox {
   background: linear-gradient(to bottom, #F76969 0%, #FABDC2 100%);
   position: relative;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
 .smallBox img, .smallBox video {
@@ -678,7 +683,8 @@ li {
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  margin: 0 auto 10px;
+
+  margin-top: 5px;
   font-size: 16px; 
   font-family: raleway;
   font-weight: 300;
