@@ -90,12 +90,12 @@ body {
   }
   
   .carousel-button {
-    width:10px;
-    height:10px;
+    width:24px; /*selma, denna size enbart för desktop. height och width*/
+    height:24px;
     display: inline-block;
     background: pink;
     border-radius: 50%;
-    margin:0 5px;
+    margin:0 8px;
     cursor: pointer;
   }
   
