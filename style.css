@@ -272,7 +272,8 @@ li {
   padding: 20px 0;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
 
@@ -306,10 +307,18 @@ li {
   width: 24px; /*selma, denna size enbart för desktop. height och width*/
   height: 24px;
   display: inline-block;
-  background: pink;
+  background: #F9F6ED;
   border-radius: 50%;
   margin: 0 8px;
   cursor: pointer;
+}
+
+@media (max-width:749px) {
+  .carousel-button {
+    width:13px;
+    height:13px;
+    margin: 0 4px;
+  }
 }
 
 .carousel-item--selected {
@@ -317,7 +326,7 @@ li {
 }
 
 .carousel-button--selected {
-  background-color: darkorchid;
+  background-color: #28282D;
 }
 
 .siteInfo {
