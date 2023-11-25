@@ -1,49 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins:wght@300;600;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-
+  padding: 0;
+  margin: 0;
 }
 
-
-
 body {
-    position: relative;
-    
+  position: relative;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-    
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
 
-    background-image: url('pics/backgrounds/background-mobi-light.svg');
-    background-position: center -500px; 
-    background-size: 500px 4000px;
-    background-repeat: no-repeat;
+  background-image: url("pics/backgrounds/background-mobi-light.svg");
+  background-position: center -500px;
+  background-size: 500px 4000px;
+  background-repeat: no-repeat;
 
-    margin: 0;
-  
-    background-color: #F9F6ED;
+  margin: 0;
+
+  background-color: #f9f6ed;
 }
 
 header {
   height: 76px;
   width: 100%;
-  background-color: #28282D;
+  background-color: #28282d;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   font-size: 20px;
-  
 }
 
 .navLeft {
@@ -56,32 +48,29 @@ header {
 .headerLogo {
   height: 50px;
   width: 50px;
-  
 }
 
 .headerLogo img {
-  max-width: 100%; 
-  height: auto; 
-  
+  max-width: 100%;
+  height: auto;
 }
 
 .desktop-nav-right div {
   display: flex;
-  align-items: center; 
-  gap: 10px; 
+  align-items: center;
+  gap: 10px;
 }
 
 .desktop-nav-right h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 24px;
   color: white;
   margin: 0;
 }
 
 .desktop-nav-right img {
-  height: 30px; 
+  height: 30px;
 }
-
 
 .desktop-nav-right {
   display: none;
@@ -91,36 +80,28 @@ header {
   gap: 50px;
 }
 
-
-
-
-
 header .navbar {
-  
   align-items: center;
   justify-content: space-between;
   position: relative;
   display: inline-flex;
   flex-direction: row;
   width: 100%;
-  background-color: #28282D;
+  background-color: #28282d;
 }
 
 header .siteTitle {
-
   margin-top: 10px;
   margin-left: 5px;
 
   color: white;
 
-  
   font-family: Raleway;
   font-size: 30px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
-
 }
 
 .header-right {
@@ -129,8 +110,6 @@ header .siteTitle {
   justify-content: flex-end;
 
   gap: 24px;
-
-
 }
 
 .mobileSearch {
@@ -160,8 +139,8 @@ header .search {
   margin-right: 8px;
 }
 
-nav  {
-  color: var(--greybox-grey, var(--Svart, #28282D));
+nav {
+  color: var(--greybox-grey, var(--Svart, #28282d));
   text-align: right;
   font-family: Raleway;
   font-size: 20px;
@@ -170,29 +149,20 @@ nav  {
   line-height: normal;
 }
 
-
-
-
-
-
-
-
-
-
 /** BURGER MENU STYLE O ALLT VAD DET INNEBÄR **/
 .nav-menu {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -70;
   height: 100%;
   width: 70%;
-  transition: 0.5s ease;
-  background-color: slategray;
-  z-index: 1;
+  transition: 0.5s ease-in-out;
+  /*background-color: slategray;*/
+  /*z-index: 1;*/
 }
 
 .nav-item {
@@ -201,15 +171,17 @@ nav  {
 
 .nav-menu.active {
   right: 0;
-  display: flex;
+  /*display: flex;*/
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: beige;
+  background-color: #28282d;
+  color: #fff;
   padding: 30px;
   /*height: 844px;*/
   width: 70%;
   font-size: 18px;
   border-bottom: 1px slategray;
+  z-index: 1;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /*ändra detta selma*/
 }
@@ -228,6 +200,7 @@ nav  {
 .nav-link,
 a:link {
   text-decoration: none;
+  color: #fff;
 }
 
 .nav-link,
@@ -258,10 +231,12 @@ a:active {
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
+  background-color: white;
 }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+  background-color: white;
 }
 
 .bar {
@@ -278,221 +253,194 @@ li {
   list-style: none;
 }
 
+/***** STYLE SOM ÄR SAMMA BÅDE PÅ MOBIL OCH DESKTOP, kmr förbättras ******/
 
+.carousel {
+  position: relative;
+}
 
+.carousel-hero-images {
+  display: block;
 
+  height: auto;
 
+  background-color: #a09d59;
+}
 
+.carousel-nav {
+  width: 65%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
 
+.carousel-item {
+  background-color: #d9d9d9;
+  height: auto;
+  width: auto;
+  /*gap: 5px;*/
+  display: none;
 
+  position: relative;
+}
 
-  
-  /***** STYLE SOM ÄR SAMMA BÅDE PÅ MOBIL OCH DESKTOP, kmr förbättras ******/
-  
-  .carousel {
-    position: relative;
-  }
-  
-  .carousel-hero-images {
-    display: block;
-    
-    height: auto;
+.carousel-item h1 {
+  position: absolute;
+  top: 70%;
+  left: 10%;
 
-    background-color: #A09D59;
-  }
-  
-  .carousel-nav {
-    width:65%;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left:0;
-    text-align: center;
-  }
-  
-  .carousel-item {
-    background-color: #d9d9d9;
-    height: auto;
-    width: auto;
-    /*gap: 5px;*/
-    display:none;
+  color: #28282d;
+  padding: 10px;
 
-    position: relative;
-  }
+  font-family: Raleway;
+  font-size: 5.5vw;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
-  .carousel-item h1 {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    
-    color: #28282D; 
-    padding: 10px; 
+.carousel-button {
+  width: 24px; /*selma, denna size enbart för desktop. height och width*/
+  height: 24px;
+  display: inline-block;
+  background: pink;
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+}
 
-  
-    font-family: Raleway;
-    font-size: 5.5vw;
-    font-weight: 300;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
+.carousel-item--selected {
+  display: inline-block;
+}
 
-  }
-  
-  .carousel-button {
-    width:24px; /*selma, denna size enbart för desktop. height och width*/
-    height:24px;
-    display: inline-block;
-    background: pink;
-    border-radius: 50%;
-    margin:0 8px;
-    cursor: pointer;
-  }
-  
-  .carousel-item--selected {
-    display: inline-block;
-  }
-  
-  .carousel-button--selected {
-    background-color: darkorchid;
-  }
-  
-  .siteInfo {
-    
-    /*width: 50%;*/
-    margin-right: 3px;
-  }
-  .siteInfo h1{
-    font-family: Raleway;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
+.carousel-button--selected {
+  background-color: darkorchid;
+}
 
-  .texty {
-    color: var(--greybox-grey, var(--Svart, #28282D));
-    /* Desktop/Brödtext */
-    font-family: IBM Plex Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;  
-  }
-  
-  .arrowContainer { /*Paxar space för scroll-pil-knappen, ev inte aktuell för desktop? Men jag tar bort det sen isf*/
-    padding:40px;
+.siteInfo {
+  /*width: 50%;*/
+  margin-right: 3px;
+}
+.siteInfo h1 {
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 
-    width: 64px;
-    height: 64px;
-    
-    
-  }
+.texty {
+  color: var(--greybox-grey, var(--Svart, #28282d));
+  /* Desktop/Brödtext */
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-  .arrowsDown {
-    height: 100%;
-    width: 100%;
-    background-image: url('icons/arrowsDown.png');
-    object-fit: cover; 
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-  }
+.arrowContainer {
+  /*Paxar space för scroll-pil-knappen, ev inte aktuell för desktop? Men jag tar bort det sen isf*/
+  padding: 40px;
 
-  .readMore {
-    display: inline-flex;
+  width: 64px;
+  height: 64px;
+}
+
+.arrowsDown {
+  height: 100%;
+  width: 100%;
+  background-image: url("icons/arrowsDown.png");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.readMore {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
   /* position: relative; */
   background-color: #ffffff;
-  border: 4px solid #F7969E;
+  border: 4px solid #f7969e;
   box-shadow: 0px 4px #d0d0d0;
   border-radius: 10px;
   gap: 4px;
   cursor: pointer;
 
-  
   font-family: Raleway;
   font-size: 16px;
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: center;
+}
 
-  }
-  
-  
-    /*Ändra size sen*/
-    
-  
-    /*KARUSELL FÖR MOBIL*/
-    .carousel-item {
-      /*Kolla så sizen är korrekt i mobilformat*/
-      background-color: #d9d9d9;
-      height: auto;
-      width: 100%;
-    }
-  
-    .carousel-hero-images {
-      display: block;
-      width:100%;
-      height: auto;
-    }
-  
-    /*TEXT TILL KARUSELL, MOBIL*/
-    .siteInfo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 100%;
-      /*padding: 10px;*/
-      gap: 4px;
+/*Ändra size sen*/
 
-      margin-bottom: 50px;
-    }
-  
-    .siteInfo h1 {
-      display: none;
+/*KARUSELL FÖR MOBIL*/
+.carousel-item {
+  /*Kolla så sizen är korrekt i mobilformat*/
+  background-color: #d9d9d9;
+  height: auto;
+  width: 100%;
+}
 
-    }
-  
-    .texty {
-      height: 105px;
-      width: 90%;
-      padding: 4px;
-  
-      font-size: 16px;
-      color: #373737;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-    }
-  
-    .button { /* byt namn till något mer specifikt selma */
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px 24px;
-      /*position:relative;*/
-      background-color: #ffffff;
-      border: 4px solid black;
-      box-shadow: 0px 4px #d0d0d0;
-      border-radius: 10px;
-      gap: 4px;
-      cursor: pointer;
-    }
-  
-    
-  
+.carousel-hero-images {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+/*TEXT TILL KARUSELL, MOBIL*/
+.siteInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  /*padding: 10px;*/
+  gap: 4px;
 
+  margin-bottom: 50px;
+}
 
+.siteInfo h1 {
+  display: none;
+}
 
-  
-  
+.texty {
+  height: 105px;
+  width: 90%;
+  padding: 4px;
 
+  font-size: 16px;
+  color: #373737;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  /* byt namn till något mer specifikt selma */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  /*position:relative;*/
+  background-color: #ffffff;
+  border: 4px solid black;
+  box-shadow: 0px 4px #d0d0d0;
+  border-radius: 10px;
+  gap: 4px;
+  cursor: pointer;
+}
 
 /* -------- DARK MODE KNAPP ------------- */
 
@@ -502,140 +450,124 @@ li {
 }
 
 .toggle-button {
-    width: 60px; 
-    height: 30px; 
-    background-color: #ddd; 
-    border-radius: 15px; 
-    position: relative; 
-    cursor: pointer; 
+  width: 60px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
 
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
 
-
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .toggle-slider {
-    width: 22px; 
-    height: 22px; 
-    background-color: #474747; 
-    
-    position: absolute;
-    top: 4px; 
-    left: 7px; 
-    border-radius: 50%; 
-    transition: 0.3s; 
+  width: 22px;
+  height: 22px;
+  background-color: #474747;
+
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  border-radius: 50%;
+  transition: 0.3s;
 }
-
-
-
-
-
-
-
-
-
 
 /* ---------------- KATEGORI-BOXAR ----------------*/
 
 .boxContainer {
-    margin-top: 100px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin-top: 100px;
 
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    margin-bottom: 20px;
+  gap: 10px;
+
+  margin-bottom: 20px;
 }
 
-
-
-.box1, .box2, .box3 {
-  background: linear-gradient(to bottom, #F76969 0%, #FABDC2 100%);
+.box1,
+.box2,
+.box3 {
+  background: linear-gradient(to bottom, #f76969 0%, #fabdc2 100%);
   width: 350px;
   height: 350px;
   position: relative;
 
   box-shadow: 0px 4px 4px 0px #00000040;
-
 }
 
-.box1 img, .box2 img, .box3 img, .mailSquareImg img,
-.box1 video, .box2 video, .box3 video {
-    width: 100%; 
-    height: 100%;
-    object-fit: cover; 
+.box1 img,
+.box2 img,
+.box3 img,
+.mailSquareImg img,
+.box1 video,
+.box2 video,
+.box3 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.box1 video, .box2 video, .box3 video {
-    display: none;
+.box1 video,
+.box2 video,
+.box3 video {
+  display: none;
 }
 
-.box1:hover video, .box2:hover video, .box3:hover video {
-    display: block;
+.box1:hover video,
+.box2:hover video,
+.box3:hover video {
+  display: block;
 }
 
-.box1:hover img, .box2:hover img, .box3:hover img {
-    display: none;
+.box1:hover img,
+.box2:hover img,
+.box3:hover img {
+  display: none;
 }
 
 .category-text {
-    position: absolute;  
-    color: white; 
-    font-weight: bold; 
-    
+  position: absolute;
+  color: white;
+  font-weight: bold;
 }
 
-.box1, .box2, .box3 p{
-    color: #393939;
-    font-family: Raleway;
-    font-size: 24px;
+.box1,
+.box2,
+.box3 p {
+  color: #393939;
+  font-family: Raleway;
+  font-size: 24px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.moreProducts p{
-    
-    font-family: Raleway;
-    font-size: 16px;
-    color: #000;
-    text-decoration-line: underline;
+.moreProducts p {
+  font-family: Raleway;
+  font-size: 16px;
+  color: #000;
+  text-decoration-line: underline;
 
-    margin-bottom: 65px;
-
-
+  margin-bottom: 65px;
 }
 
-.moreProducts{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: end;
+.moreProducts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: end;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ---------------- MINDRE BOXAR CSS ----------------*/
 
 .smallBoxTitle {
-  
   font-family: raleway;
   font-size: 32px;
   font-weight: 300;
@@ -644,39 +576,36 @@ li {
   margin-bottom: 10px;
 }
 
-
 .smallBox {
-  background: linear-gradient(to bottom, #F76969 0%, #FABDC2 100%);
+  background: linear-gradient(to bottom, #f76969 0%, #fabdc2 100%);
   position: relative;
   box-shadow: 0px 4px 4px 0px #00000040;
-
 }
 
-.smallBox img, .smallBox video {
-    width: 100%; 
-    height: 100%;
-    object-fit: cover; 
+.smallBox img,
+.smallBox video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 .smallBoxContainer {
   display: grid;
   gap: 10px;
   row-gap: 30px;
-  
+
   margin-bottom: 90px;
 }
 
 .smallBoxContainer {
-  grid-template-columns: repeat(2, 1fr); 
-  grid-template-rows: repeat(4, 165px); 
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 165px);
 }
 
 .smallBox {
-  height: 165px; 
+  height: 165px;
   width: 165px;
 }
-
 
 .boxDetails {
   display: flex;
@@ -685,162 +614,125 @@ li {
   width: 95%;
 
   margin-top: 5px;
-  font-size: 16px; 
+  font-size: 16px;
   font-family: raleway;
   font-weight: 300;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ---------------- Review kommentarer ----------------*/
 
 .reviewComments {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    margin-bottom: 25px;
-
-    
+  margin-bottom: 25px;
 }
 
-.commentOne, .commentTwo, .commentThree {
-    width: 250px;
+.commentOne,
+.commentTwo,
+.commentThree {
+  width: 250px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .reviewParagraph {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 300;
+  width: 180px;
 
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 300;
-    width: 180px;
+  margin-bottom: 16px;
 
-    margin-bottom: 16px;
-
-    text-align: center;
+  text-align: center;
 }
 
 .reviewTitle {
-    font-family: Raleway;
-    font-size: 19px;
-    font-weight: 400;
+  font-family: Raleway;
+  font-size: 19px;
+  font-weight: 400;
 
-
-
-    margin-bottom: 46px;
+  margin-bottom: 46px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------ STATISK "POP UP" RUTA ----------------*/
 
 .mailSquareContainer {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 
-    
-    width: 60%;
-    
+  width: 60%;
 
-    height: 260,27px;
-    background-color: #c2c2c2;
-    margin-bottom: 26px;
+  height: 260, 27px;
+  background-color: #c2c2c2;
+  margin-bottom: 26px;
 
-    border-radius: 9px;
-    border: 4px solid #F7969E;
-    background: var(--greybox-white, #FFF);
+  border-radius: 9px;
+  border: 4px solid #f7969e;
+  background: var(--greybox-white, #fff);
 }
 
 .mailSquare {
-    width: auto;
-    text-align: center;
-    
+  width: auto;
+  text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.mailSquare img{
-    width: 53px;
-    height: 53px;
+.mailSquare img {
+  width: 53px;
+  height: 53px;
 
-    margin-top: 50px;
-    
+  margin-top: 50px;
 }
 
 .mailText h2 {
-    font-size: 16px;
-    color: #000;
-    font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
 }
 
 .mailText p {
-    width: 212px;
-    height: 46px;
+  width: 212px;
+  height: 46px;
 
-    font-family: IBM Plex Sans;
-    font-size: 12px;
+  font-family: IBM Plex Sans;
+  font-size: 12px;
 }
 
 .emailPlaceholder {
-    width: 75%;
-    height: 41px;
+  width: 75%;
+  height: 41px;
 
-    background-color: #EDEBEB;
+  background-color: #edebeb;
 
-    margin-bottom: 10px;
-    
+  margin-bottom: 10px;
 }
 
 .subButton {
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
   /* position: relative; */
   background-color: #ffffff;
-  border: 4px solid #F7969E;
+  border: 4px solid #f7969e;
   box-shadow: 0px 4px #d0d0d0;
   border-radius: 10px;
   gap: 4px;
   cursor: pointer;
 
-  
   font-family: Raleway;
   font-size: 16px;
   font-weight: 600;
@@ -851,98 +743,85 @@ li {
   margin-bottom: 30px;
 }
 
-.subButton p{
-    font-family: IBM Plex Sans;
-    font-weight: 600;
-    font-size: 14px;
+.subButton p {
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .subButton:hover {
-/* sätt in hover */
-scale: 1.05;
-transition: 0.3s;
-transform: ease-in-out;
+  /* sätt in hover */
+  scale: 1.05;
+  transition: 0.3s;
+  transform: ease-in-out;
 }
 
-
 .mailSquareImg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mailSquareImg img {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 
-    margin-right: 30px;
-    
+  margin-right: 30px;
 
-    display: none;
+  display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------- FOOTER ----------------*/ 
+/* ---------------- FOOTER ----------------*/
 footer {
-    height: 258px;
-    width: 100%;
+  height: 258px;
+  width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-shrink: 0;
-    background: #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: #d9d9d9;
 }
 
 footer a:visited {
-    color: #000;
-
+  color: #000;
 }
 
 .footerNav {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 
-    gap: 22px;
+  gap: 22px;
 }
 
-.footerNav .kontakt, .faq, .leverans, .villkor {
-    color: #000;
+.footerNav .kontakt,
+.faq,
+.leverans,
+.villkor {
+  color: #000;
 
-    text-align: center;
-    font-family: IBM Plex Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
+  text-align: center;
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 
 .footerSocials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.footerSocials img{
-    width: 24px;
-    height: 24px;
+.footerSocials img {
+  width: 24px;
+  height: 24px;
 
-    padding-left: 5px;
-    padding-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-
-  
