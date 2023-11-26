@@ -254,6 +254,9 @@ li {
 }
 
 /***** STYLE SOM ÄR SAMMA BÅDE PÅ MOBIL OCH DESKTOP, kmr förbättras ******/
+.preview {
+  position: relative;
+}
 
 .carousel {
   position: relative;
@@ -283,7 +286,6 @@ li {
   width: auto;
   /*gap: 5px;*/
   display: none;
-
   position: relative;
 }
 
@@ -304,7 +306,8 @@ li {
 }
 
 .carousel-button {
-  width: 24px; /*selma, denna size enbart för desktop. height och width*/
+  width: 24px; 
+  bottom:0;
   height: 24px;
   display: inline-block;
   background: #F9F6ED;
@@ -312,6 +315,35 @@ li {
   margin: 0 8px;
   cursor: pointer;
 }
+
+/*.controls {
+  display: inline-block;
+  position: absolute;
+  top:50%;
+  transform: translate(-50%, -50%);
+}*/
+
+.carousel-arrow-right,
+.carousel-arrow-left {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  background-color: none;
+  color: black;
+  transform: translate(0%, -50%);
+  font-size: 84px; 
+  padding: 5px 10px;
+}
+
+.carousel-arrow-right {
+  right: 0;
+}
+
+.carousel-arrow-left {
+  left: 0;
+}
+
 
 @media (max-width:749px) {
   .carousel-button {

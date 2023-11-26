@@ -49,8 +49,8 @@
         flex-direction: row;
         width: 100%;
         align-items: center;
+        position: relative;
         /* justify-content: center; */
-        
       }
 
       .carousel {
