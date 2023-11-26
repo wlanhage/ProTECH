@@ -194,10 +194,21 @@ nav {
   align-items: center;
 }
 
+.nav-menu-bottom .darkModeBtn { /*william*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:-15px;
+}
+
 .nav-menu-bottom p {
   text-decoration: underline;
   color:#000;
   font-family:IBM Plex Sans;
+}
+
+.nav-menu-bottom, .footerSocials {
+  margin-bottom:15px;
 }
 
 .nav-item {
@@ -227,7 +238,7 @@ nav {
   text-align: center;
 }
 
-.h1Meny {
+.h1Meny { /*selma, ändra så titeln inte halkar in*/
   display: flex;
   font-size: 24px;
   margin-bottom: 20px;
@@ -306,7 +317,8 @@ a:active {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #373737;
+  background-color:#F9F6ED;
+  ;
 }
 
 li {
