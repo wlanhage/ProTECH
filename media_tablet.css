@@ -104,8 +104,10 @@
       .siteInfo h1 {
         display: block;
       }
-
       
+      .readMore {
+        margin-top:15%;
+      }
   
 
 /* KATEGORIER */
