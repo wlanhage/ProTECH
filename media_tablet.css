@@ -88,6 +88,14 @@
       .carousel-item--selected {
         display: inline-block;
       }
+
+      .carousel-item--selected h1{
+        display: block;
+        line-height: 38px;
+        font-size: 4vw;
+        letter-spacing: 2px;
+        
+      }
     
       .siteInfo {
         width:40%;
@@ -102,7 +110,7 @@
       }
 
       .siteInfo h1 {
-        display: block;
+        display: none;
         
       }
       
@@ -126,6 +134,16 @@
           background-position: center;
           opacity: 0.1; /* adjust as needed */
           z-index: -1;
+        }
+
+        .sun, .moon {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10px; /* Example size, adjust as needed */
+          height: 10px; /* Example size, adjust as needed */
+          object-fit: cover;
+          z-index: 1; /* Ensures that the icons are below the slider */
         }
   
 

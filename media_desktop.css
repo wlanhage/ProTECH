@@ -114,6 +114,16 @@
           z-index: -1;
         }
 
+        .sun, .moon {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 20px; /* Example size, adjust as needed */
+          height: 20px; /* Example size, adjust as needed */
+          object-fit: cover;
+          z-index: 1; /* Ensures that the icons are below the slider */
+        }
+
     
     /** Williams del nedanför */
 
