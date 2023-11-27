@@ -35,6 +35,11 @@
 }
 
 
+.dark-mode .siteInfo::before {
+    
+      background-image: url("icons/logo/protech_large_white.png");
+      opacity: 0.05;
+}
 
 .dark-mode .subButton {
     background-color: #28282D;
