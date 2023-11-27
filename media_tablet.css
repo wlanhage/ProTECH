@@ -108,6 +108,24 @@
       .readMore {
         margin-top:15%;
       }
+
+
+      .siteInfo::before {
+        display: block;
+        
+          content: "";
+          position: absolute;
+          top: 100;
+          left: 30;
+          width: 40vw;
+          height: 100vh;
+          background-image: url("icons/logo/protech_large.png");
+          background-repeat: no-repeat;
+          background-size: 90%;
+          background-position: center;
+          opacity: 0.1; /* adjust as needed */
+          z-index: -1;
+        }
   
 
 /* KATEGORIER */
