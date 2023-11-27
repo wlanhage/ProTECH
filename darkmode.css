@@ -23,20 +23,35 @@
 
 }
 
+
+
 .dark-mode p{
 
     color: #fff;}
 
-.dark-mode .mailText p{
-    color: #000;
+.dark-mode h2 {
+
+    color: #fff;
 }
 
-.dark-mode .subButton p {
-    color: #000; 
+
+
+.dark-mode .subButton {
+    background-color: #28282D;
+    color: white; 
 } 
+
+.dark-mode .readMore {
+    background-color: #28282D;
+    color: white;
+}
 
 .dark-mode .mailSquareContainer {
     background-color: #28282D;
+}
+
+.dark-mode .mailIcon {
+    content: url('pics/icons/mail-icon-white.svg');
 }
 
 body.dark-mode {

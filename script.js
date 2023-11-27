@@ -3,15 +3,20 @@
 
 /* ---------------- DARK MODE SLIDE KNAPP ---------------- */
 
-document.querySelector('.toggle-button').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    const slider = document.querySelector('.toggle-slider');
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.toggle-button');
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            const slider = this.querySelector('.toggle-slider');
 
-    if (slider.style.left === '7px' || slider.style.left === '') {
-        slider.style.left = '31px'; // Move slider to the right
-    } else {
-        slider.style.left = '7px'; // Move slider back to the left
-    }
+            if (slider.style.left === '7px' || slider.style.left === '') {
+                slider.style.left = '31px'; // Move slider to the right
+            } else {
+                slider.style.left = '7px'; // Move slider back to the left
+            }
+        });
+    });
 });
 
 /* ------ SPELA VIDEOR PÅ HOVER (BOX 1, 2, 3) ------ */
