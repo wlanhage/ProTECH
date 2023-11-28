@@ -856,6 +856,17 @@ font-size: 30px;
   align-items: center;
 }
 
+.mailIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.mailIconDark {
+  display: none;
+  width: 100px;
+  height: 100px;
+}
+
 
 
 .mailText h2 {

@@ -56,8 +56,14 @@
 }
 
 .dark-mode .mailIcon {
-    content: url('pics/icons/mail-icon-white.svg');
-}
+    display: none;
+  }
+  
+.dark-mode .mailIconDark {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
 
 body.dark-mode {
     background-image: url('pics/backgrounds/background-mobi-dark.svg');
