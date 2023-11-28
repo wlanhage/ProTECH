@@ -91,6 +91,7 @@
       }
       .texty {
         align-items: start;
+        margin-bottom: 80px;
       }
 
       .siteInfo h1 {
@@ -112,6 +113,10 @@
           background-position: center;
           opacity: 0.1; /* adjust as needed */
           z-index: -1;
+        }
+
+        .arrowContainer{
+          margin-top: 50px;
         }
 
         .sun, .moon {

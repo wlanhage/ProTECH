@@ -442,15 +442,6 @@ li {
   line-height: normal;
 }
 
-.texty {
-  color: var(--greybox-grey, var(--Svart, #28282d));
-  /* Desktop/Brödtext */
-  font-family: IBM Plex Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
 .arrowContainer {
   padding: 40px;
@@ -470,9 +461,6 @@ li {
   cursor: pointer;
 }
 
-#category-boxes {
-  background-color: pink;
-}
 
 .readMore {
   display: flex;
@@ -542,14 +530,23 @@ display: none;
 
 .texty {
   height: 105px;
-  width: 100%;
+  width: 85%;
   
 
   font-size: 16px;
   color: #373737;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  color: var(--greybox-grey, var(--Svart, #28282d));
+  /* Desktop/Brödtext */
+  font-family: IBM Plex Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /**.button {
