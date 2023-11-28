@@ -155,8 +155,7 @@
     margin-left: 10px;
 }
     .boxContainer {
-        flex-direction: row;
-        
+        flex-direction: row;        
     }
 
     .box1, .box2, .box3 {

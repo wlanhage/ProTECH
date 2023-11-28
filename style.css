@@ -453,9 +453,8 @@ li {
 }
 
 .arrowContainer {
-  /*Paxar space för scroll-pil-knappen, ev inte aktuell för desktop? Men jag tar bort det sen isf*/
   padding: 40px;
-
+  margin-top:-40px;
   width: 64px;
   height: 64px;
 }
