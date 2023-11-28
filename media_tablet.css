@@ -154,6 +154,9 @@
           object-fit: cover;
           z-index: 1; /* Ensures that the icons are below the slider */
         }
+        .moon {
+          right: 18px; /* Adjust as needed */
+        }
   
 
 /* KATEGORIER */

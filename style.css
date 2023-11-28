@@ -595,22 +595,30 @@ display: none;
   z-index: 2; /* Higher z-index to cover the icons */
 }
 
-.sun, .moon {
+.sun img, .moon img{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 17px; /* Example size, adjust as needed */
-  height: 17px; /* Example size, adjust as needed */
+  width: 20px; /* Example size, adjust as needed */
+  height: 20px; /* Example size, adjust as needed */
   object-fit: cover;
   z-index: 1; /* Ensures that the icons are below the slider */
 }
 
 .sun {
-  left: 10px; /* Adjust as needed */
+  left: 7px; /* Adjust as needed */
 }
 
 .moon {
-  right: 10px; /* Adjust as needed */
+  right: 7px; /* Adjust as needed */
+}
+
+.nav-menu-bottom .sun img{
+  left: 7px; /* Adjust as needed */
+}
+
+.nav-menu-bottom .moon img{
+  right: 7px; /* Adjust as needed */
 }
 
 
