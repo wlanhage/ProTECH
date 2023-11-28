@@ -75,3 +75,8 @@ body.dark-mode {
     background: linear-gradient(to bottom, #002c92 0%, #004bfb 100%);
 }  
 
+.dark-mode .nav-menu-top, .dark-mode .nav-menu-bottom, .dark-mode .nav-menu.active {
+    background-color:#28282d;
+    color:#fff;
+    transition: none;
+}
