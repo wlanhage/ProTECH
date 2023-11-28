@@ -2,3 +2,6 @@
 
 <?php
 
+//$db = new PDO('sqlite:emails.db');
+
+
