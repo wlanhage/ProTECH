@@ -74,13 +74,14 @@
   }
 
   .carousel {
-    width: 60%;
+    width: 700px;
     height: auto;
+    margin-right:9%;
   }
 
   .carousel-hero-images {
     display: block;
-    width: 100%;
+    /*width: 100%;*/
     height: auto;
   }
 
@@ -90,6 +91,8 @@
     display: none;
   }
 
+  
+
   .carousel-item h1 {
     display: none;
   }
@@ -97,12 +100,11 @@
   .carousel-item--selected {
     display: inline-block;
   }
-
   .siteInfo {
     width: 33%;
     margin-left: 46px;
     margin-right: 46px;
-
+    
     display: flex;
     align-items: center; /* This ensures vertical alignment */
     

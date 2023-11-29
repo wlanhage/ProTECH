@@ -9,9 +9,9 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     `<div class="carousel-nav">
       ${buttonsHtml.join("")}
     </div>
-    <span class="carousel-arrow carousel-arrow-left">&#8249;</span>
     <span class="carousel-arrow carousel-arrow-right">&#8250;</span>`
   );
+/** <span class="carousel-arrow carousel-arrow-left">&#8249;</span>**/
 
   const buttons = carousel.querySelectorAll(".carousel-button");
   const arrows = carousel.querySelectorAll(".carousel-arrow");
