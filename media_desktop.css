@@ -21,6 +21,27 @@
         align-items: center;
         width: 100%;
       }
+
+      .language-toggle {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color:black;
+    }
+    
+    .language-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .language-button:focus {
+        outline: none;
+    }
+    
+    .language-button[selected] {
+        font-weight: bold;
+    }
     
     
       .desktop-nav-right {
