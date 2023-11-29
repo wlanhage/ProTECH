@@ -1,88 +1,90 @@
 /* ---------------- DARK MODE PROPS ----------------*/
 
-
-
-.dark-mode .toggle-slider{
-    background-color: #fff;
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
+.dark-mode .toggle-slider {
+  background-color: #fff;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .dark-mode .toggle-button {
-    background-color: #9d9d9d;
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
+  background-color: #9d9d9d;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .dark-mode {
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
 
-    background-color: #28282D;
-    color: #fff;
-
+  background-color: #28282d;
+  color: #fff;
 }
 
-
-
-.dark-mode p{
-
-    color: #fff;}
+.dark-mode p {
+  color: #fff;
+}
 
 .dark-mode h2 {
-
-    color: #fff;
+  color: #fff;
 }
 
-
 .dark-mode .siteInfo::before {
-    
-      background-image: url("icons/logo/protech_large_white.png");
-      opacity: 0.05;
+  background-image: url("icons/logo/protech_large_white.png");
+  opacity: 0.05;
 }
 
 .dark-mode .subButton {
-    background-color: #28282D;
-    color: white; 
-} 
+  background-color: #28282d;
+  color: white;
+}
 
 .dark-mode .readMore {
-    background-color: #28282D;
-    color: white;
+  background-color: #28282d;
+  color: white;
 }
 
 .dark-mode .mailSquareContainer {
-    background-color: #28282D;
+  background-color: #28282d;
 }
 
 .dark-mode .mailIcon {
-    display: none;
-  }
-  
+  display: none;
+}
+
 .dark-mode .mailIconDark {
-    display: block;
-    width: 100px;
-    height: 100px;
-  }
+  display: block;
+  width: 100px;
+  height: 100px;
+}
 
 body.dark-mode {
-    background-image: url('pics/backgrounds/background-mobi-dark.svg');
+  background-image: url("pics/backgrounds/background-mobi-dark.svg");
 }
 
 @media screen and (min-width: 750px) {
-    body.dark-mode {
-        background-image: url('pics/backgrounds/background-desk-dark.svg');
-    }
+  body.dark-mode {
+    background-image: url("pics/backgrounds/background-desk-dark.svg");
+  }
 }
 
+.dark-mode .smallBox,
+.dark-mode .box1,
+.dark-mode .box2,
+.dark-mode .box3 {
+  background: linear-gradient(to bottom, #002c92 0%, #004bfb 100%);
+}
 
+.dark-mode .nav-menu-top,
+.dark-mode .nav-menu-bottom,
+.dark-mode .nav-menu.active {
+  background-color: #28282d;
+  color: #fff;
+  transition: none;
+}
 
-.dark-mode .smallBox, .dark-mode .box1, .dark-mode .box2, .dark-mode .box3 {
-    background: linear-gradient(to bottom, #002c92 0%, #004bfb 100%);
-}  
-
-.dark-mode .nav-menu-top, .dark-mode .nav-menu-bottom, .dark-mode .nav-menu.active {
-    background-color:#28282d;
-    color:#fff;
+@media (max-width: 749px) {
+  .dark-mode .language-toggle, .dark-mode .language-button {
+    color: #fff;
     transition: none;
+  }
 }

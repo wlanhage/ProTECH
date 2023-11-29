@@ -32,6 +32,28 @@
     gap: 25px;
   }
 
+  .language-toggle { /*selma ändra detta. för mkt saker i menyn*/
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .language-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .language-button:focus {
+    outline: none;
+  }
+
+  .language-button[selected] {
+    font-weight: bold;
+  }
+
   .desktop-nav-right h1 {
     font-family: "Raleway";
     font-size: 16px;
