@@ -131,12 +131,10 @@ header .siteTitle {
 
 header .menyOptions {
   /*Söknings-knapp*/
-  /*Förenkla detta selma*/
   gap: 8px;
   /*flex: 0 0 auto;*/
   display: inline-flex;
   align-items: flex-start;
-  /*position: relative;*/
 }
 
 header .search {
@@ -245,7 +243,7 @@ nav {
   text-align: center;
 }
 
-.h1Meny { /*selma, ändra så titeln inte halkar in*/
+.h1Meny { 
   display: flex;
   font-size: 24px;
   margin-bottom: 20px;
@@ -388,7 +386,7 @@ li {
   top: 70%;
   left: 10%;
 
-  color: #28282d;
+  /*color: #28282d;*/
   padding: 10px;
 
   font-family: Raleway;
@@ -409,13 +407,6 @@ li {
   margin: 0 8px;
   cursor: pointer;
 }
-
-/*.controls {
-  display: inline-block;
-  position: absolute;
-  top:50%;
-  transform: translate(-50%, -50%);
-}*/
 
 .carousel-arrow-right,
 .carousel-arrow-left {
@@ -496,7 +487,6 @@ li {
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  /* position: relative; */
   background-color: #F9F6ED;
   border: 4px solid #f7969e;
   
@@ -512,11 +502,8 @@ li {
   text-align: center;
 }
 
-/*Ändra size sen*/
-
 /*KARUSELL FÖR MOBIL*/
 .carousel-item {
-  /*Kolla så sizen är korrekt i mobilformat*/
   background-color: #d9d9d9;
   height: auto;
   width: 100%;
@@ -530,28 +517,23 @@ li {
 
 /*TEXT TILL KARUSELL, MOBIL*/
 .siteInfo {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  
   position: relative;
-
   margin-bottom: 50px;
-
-  /* background-image: url("icons/logo/ProTech-logotyp_Logotyp-svart.svg");
-  background-repeat: no-repeat;
-  background-size: 120%;
-  background-position: center; */
 }
 
-.siteInfo::before {
-display: none;
-
+.siteInfo.carousel-item--selected {
+  display: flex;
 }
+
+
+
 
 .siteInfo h1 {
   display: none;
@@ -577,21 +559,6 @@ display: none;
   font-weight: 400;
   line-height: normal;
 }
-
-/**.button {
-  Verkar va inaktiv? Låter stå lite ifall jag ser fel /selma
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 24px;
-  /*position:relative;
-  background-color: purple;
-  border: 4px solid black;
-  box-shadow: 0px 4px #d0d0d0;
-  border-radius: 10px;
-  gap: 4px;
-  cursor: pointer;
-}*/
 
 /* -------- DARK MODE KNAPP ------------- */
 
