@@ -105,7 +105,7 @@
 
     display: flex;
     align-items: center; /* This ensures vertical alignment */
-    justify-content: start; /* Aligns content to the start of the container */
+    
     flex-direction: row; 
   }
   .texty {
@@ -134,10 +134,7 @@
     z-index: -1;
   }
 
-  .siteInfo h1, .siteInfo p {
-    margin: 0;
-    padding: 0;
-  }
+  
 
   .arrowContainer {
     margin-top: 50px;
