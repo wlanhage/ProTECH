@@ -75,13 +75,13 @@
 
   .carousel {
     width: 700px;
-    height: auto;
-    margin-right:9%;
+    height: 700px;
+    margin-right:107px;
   }
 
   .carousel-hero-images {
     display: block;
-    /*width: 100%;*/
+    width: 100%;
     height: auto;
   }
 
@@ -91,7 +91,6 @@
     display: none;
   }
 
-  
 
   .carousel-item h1 {
     display: none;
@@ -100,6 +99,7 @@
   .carousel-item--selected {
     display: inline-block;
   }
+
   .siteInfo {
     width: 33%;
     margin-left: 46px;
