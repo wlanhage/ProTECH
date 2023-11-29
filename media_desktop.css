@@ -76,6 +76,7 @@
   .carousel {
     width: 700px;
     height: 700px;
+    margin-right:107px;
   }
 
   .carousel-hero-images {
@@ -90,6 +91,7 @@
     display: none;
   }
 
+
   .carousel-item h1 {
     display: none;
   }
@@ -102,7 +104,7 @@
     width: 33%;
     margin-left: 46px;
     margin-right: 46px;
-
+    
     display: flex;
     align-items: center; /* This ensures vertical alignment */
     
