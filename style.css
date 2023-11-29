@@ -997,7 +997,7 @@ footer {
 }
 
 footer a:visited {
-  color: #000;
+  color: #FFFFFF;
 }
 
 .footerNav {
@@ -1013,7 +1013,7 @@ footer a:visited {
 .faq,
 .leverans,
 .villkor {
-  color: #000;
+  color: #FFFFFF;
 
   text-align: center;
   font-family: IBM Plex Sans;
