@@ -10,7 +10,7 @@
 
   header {
     height: 76px;
-    background-color: #fff;
+    background-color: #2d2d2d;
     font-size: 20px;
 
     position: -webkit-sticky;
@@ -26,7 +26,7 @@
     width: 100%;
   }
   .desktop-nav-right {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     gap: 25px;
@@ -71,7 +71,9 @@
   }
 
   .header-right {
-    display: none;
+    display: flex;
+
+  
   }
 
   .navVarukorg h1,
@@ -130,10 +132,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
   }
 
   .texty {
     margin-bottom: 80px;
+    justify-content: start;
   }
 
   .siteInfo h1 {
