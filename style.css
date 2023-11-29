@@ -38,7 +38,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  z-index: 3;
   font-size: 20px;
 }
 
@@ -423,6 +423,13 @@ li {
     width:13px;
     height:13px;
     margin: 0 4px;
+  }
+
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
   }
 }
 

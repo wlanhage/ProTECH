@@ -1,231 +1,207 @@
-@media (min-width: 750px) and (max-width: 1049px) { /** MEDIA FÖR TABLET SIZE **/
+@media (min-width: 750px) and (max-width: 1049px) {
+  /** MEDIA FÖR TABLET SIZE **/
 
+  body {
+    background-image: url("pics/backgrounds/background-desk-light.svg");
+    background-size: 1200px 2200px;
+    background-position: center 75%;
+    background-repeat: no-repeat;
+  }
 
-    body {
-        background-image: url('pics/backgrounds/background-desk-light.svg');
-        background-size: 1200px 2200px;
-        background-position: center 75%; 
-        background-repeat: no-repeat; 
-        
-      
-      }
+  header {
+    height: 76px;
+    background-color: #fff;
+    font-size: 20px;
 
-    header {
-        height: 76px;
-        background-color: #fff;
-        font-size: 20px;
-      }
-    
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-      }
-      .desktop-nav-right {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap:25px;
-      }    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
 
-      .desktop-nav-right h1 {
-        font-family: 'Raleway';
-        font-size: 16px;
-      }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .desktop-nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+  }
 
-      
-    
-    
-    
-      .desktop-search {
-        display: flex;
-        align-items: center;
-        margin-left: 40px;
-        margin-right: 10px;
-      }
-    
-      .nav-menu {
-        display: none;
-      }
-    
-      .header-right {
-        display: none;
-      }
-    
-      /** KARUSELL FÖR DESKTOP OCH TABLET **/
-  
-    .preview {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        /* justify-content: center; */
-        position: relative;
-      }
+  .desktop-nav-right h1 {
+    font-family: "Raleway";
+    font-size: 16px;
+  }
 
-      .carousel {
-        width: 60%;
-        height: auto;
-        
-      }
-    
-      .carousel-hero-images {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-    
-      .carousel-item {
-        background-color: #d9d9d9;
-        /*gap: 5px;*/
-        display:none;
-      }
+  .desktop-search {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 10px;
+  }
 
-      .carousel-item h1 {
-        display: none;
-    }
+  .nav-menu {
+    display: none;
+  }
 
-      .carousel-item--selected {
-        display: inline-block;
-      }
+  .header-right {
+    display: none;
+  }
 
-      .carousel-item--selected h1{
-        display: block;
-        line-height: 38px;
-        font-size: 4vw;
-        letter-spacing: 2px;
-        
-      }
-    
-      .siteInfo {
-        width:40%;
-        margin-left: 26px;
-        margin-right: 26px;
-  
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-      }
+  /** KARUSELL FÖR DESKTOP OCH TABLET **/
 
-      .texty {
-        margin-bottom: 80px;
-      }
+  .preview {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+  }
 
-      .siteInfo h1 {
-        display: none;
-        
-      }
-      
-      .readMore {
-        margin-top:15%;
-      }
+  .carousel {
+    width: 60%;
+    height: auto;
+  }
 
+  .carousel-hero-images {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-      .siteInfo::before {
-        display: block;
-        
-          content: "";
-          position: absolute;
-          top: 100;
-          left: 30;
-          width: 40vw;
-          height: 100vh;
-          background-image: url("icons/logo/protech_large.png");
-          background-repeat: no-repeat;
-          background-size: 90%;
-          background-position: center;
-          opacity: 0.1; /* adjust as needed */
-          z-index: -1;
-        }
+  .carousel-item {
+    background-color: #d9d9d9;
+    /*gap: 5px;*/
+    display: none;
+  }
 
-        .arrowContainer{
-          margin-top: 50px;
-        }
+  .carousel-item h1 {
+    display: none;
+  }
 
-        .sun, .moon {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 10px; /* Example size, adjust as needed */
-          height: 10px; /* Example size, adjust as needed */
-          object-fit: cover;
-          z-index: 1; /* Ensures that the icons are below the slider */
-        }
-        .moon {
-          right: 18px; /* Adjust as needed */
-        }
-  
+  .carousel-item--selected {
+    display: inline-block;
+  }
 
-/* KATEGORIER */
+  .carousel-item--selected h1 {
+    display: block;
+    line-height: 38px;
+    font-size: 4vw;
+    letter-spacing: 2px;
+  }
 
-.category-boxContainer {
+  .siteInfo {
+    width: 40%;
+    margin-left: 26px;
+    margin-right: 26px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texty {
+    margin-bottom: 80px;
+  }
+
+  .siteInfo h1 {
+    display: none;
+  }
+
+  .readMore {
+    margin-top: 15%;
+  }
+
+  .siteInfo::before {
+    display: block;
+
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 30;
+    width: 40vw;
+    height: 100vh;
+    background-image: url("icons/logo/protech_large.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    opacity: 0.1; /* adjust as needed */
+    z-index: -1;
+  }
+
+  .arrowContainer {
+    margin-top: 50px;
+  }
+
+  .sun,
+  .moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Example size, adjust as needed */
+    height: 10px; /* Example size, adjust as needed */
+    object-fit: cover;
+    z-index: 1; /* Ensures that the icons are below the slider */
+  }
+  .moon {
+    right: 18px; /* Adjust as needed */
+  }
+
+  /* KATEGORIER */
+
+  .category-boxContainer {
     margin-right: 10px;
     margin-left: 10px;
-}
-    .boxContainer {
-        flex-direction: row;        
-    }
+  }
+  .boxContainer {
+    flex-direction: row;
+  }
 
-    .box1, .box2, .box3 {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        margin-bottom: 20px;
-    }
+  .box1,
+  .box2,
+  .box3 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
 
-    .box1 video, .box2 video, .box3 video {
-        height: 200%;
-    }
+  .box1 video,
+  .box2 video,
+  .box3 video {
+    height: 200%;
+  }
 
+  /* KOMMENTARER */
 
-    /* KOMMENTARER */
+  .reviewComments {
+    flex-direction: row;
+  }
 
-    .reviewComments {
-        flex-direction: row;
-    }
+  /* MINDRE BOXAR */
 
+  .smallBoxContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 4 rows */
+    gap: 10px; /* Adjust gap as needed */
+  }
 
+  .smallBox {
+    height: 165px; /* Fixed height */
+    width: 165px; /* Width adjusted to fill the column */
+  }
 
+  /* FOOTER */
+  .footerNav {
+    display: flex;
+    flex-direction: row;
 
-
-
-
-
-    /* MINDRE BOXAR */
-
-    .smallBoxContainer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 2 columns */
-        grid-template-rows: repeat(2, 1fr); /* 4 rows */
-        gap: 10px; /* Adjust gap as needed */
-        
-        
-    }
-
-    .smallBox {
-        height: 165px; /* Fixed height */
-        width: 165px; /* Width adjusted to fill the column */
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER */ 
-    .footerNav {
-        display: flex;
-        flex-direction: row;
-    
-        margin-bottom: 43px;
-    }
+    margin-bottom: 43px;
+  }
 }
