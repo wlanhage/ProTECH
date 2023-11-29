@@ -1,6 +1,5 @@
 
 
-
 /* ---------------- DARK MODE SLIDE KNAPP ---------------- */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -11,9 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const slider = this.querySelector('.toggle-slider');
 
             if (slider.style.left === '7px' || slider.style.left === '') {
-                slider.style.left = '31px'; // Move slider to the right
+                slider.style.left = '31px'; 
             } else {
-                slider.style.left = '7px'; // Move slider back to the left
+                slider.style.left = '7px';
             }
         });
     });
@@ -30,6 +29,21 @@ document.querySelectorAll('.box1, .box2, .box3').forEach(box => {
 
     box.addEventListener('mouseleave', () => {
         video.pause();
-        video.currentTime = 0; // Reset the video to the start
+        video.currentTime = 0; 
     });
 });
+
+
+/* ------- POPUP EFTER 20 SEK ------ */
+
+window.onload = function() {
+    
+    setTimeout(function() {
+        document.querySelector('.popupSquareContainer').style.display = 'flex';
+    }, 20000);
+
+    // Close knapp
+    document.querySelector('.closeButton').addEventListener('click', function() {
+        document.querySelector('.popupSquareContainer').style.display = 'none';
+    });
+};
