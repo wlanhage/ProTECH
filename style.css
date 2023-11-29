@@ -735,6 +735,8 @@ font-size: 30px;
   align-items: center; 
   width: 80vw; 
   position: relative;
+
+  margin-top: 100px;
 }
 
 .smallBoxTitle {
