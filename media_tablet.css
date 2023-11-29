@@ -32,9 +32,9 @@
     gap: 25px;
   }
 
-  .language-toggle { /*selma ändra detta. för mkt saker i menyn*/
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+  .language-toggle {
+    font-family: "Raleway";
+    font-size: 16px;
     color: #fff;
   }
 
@@ -42,7 +42,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
   }
 
@@ -71,6 +71,11 @@
   }
 
   .header-right {
+    display: none;
+  }
+
+  .navVarukorg h1,
+  .navSearch h1 {
     display: none;
   }
 
